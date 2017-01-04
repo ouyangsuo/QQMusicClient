@@ -1,2 +1,3 @@
 天气(weather)真不错！
+bad!!!
 good day!
