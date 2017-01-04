@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tvMore"
+        android:layout_width="@dimen/icon_size_small"
+        android:layout_height="@dimen/icon_size_tiny"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/arrow_down" />
+
+    <TextView
+        android:id="@+id/tvPlus"
+        android:layout_width="@dimen/icon_size_small_ii"
+        android:layout_height="@dimen/icon_size_small_ii"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/tvMore"
+        android:background="@mipmap/plus" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/tvPlus"
+        android:singleLine="true"
+        android:text="歌曲名称"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvDownloaded"
+        android:layout_width="@dimen/icon_size_tiny_ii"
+        android:layout_height="@dimen/icon_size_tiny_ii"
+        android:layout_below="@id/tvName"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/downloaded" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/tvDownloaded"
+        android:layout_toLeftOf="@id/tvPlus"
+        android:singleLine="true"
+        android:text="歌手·专辑"
+        android:textSize="15sp" />
+
+</RelativeLayout>

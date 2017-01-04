@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vTopExtra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/toolbarGreen"
+        />
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLight" />
+
+    <LinearLayout
+        android:id="@+id/llPlaying"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_middle"
+        android:paddingRight="@dimen/margin_middle">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdvCover"
+            android:layout_width="@dimen/iconsize_middle"
+            android:layout_height="@dimen/iconsize_middle"
+            app:placeholderImage="@mipmap/ic_launcher"
+            app:roundAsCircle="true"
+            app:backgroundImage="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌曲名称"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSingerAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="歌手名·专辑名"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPlayPause"
+            android:layout_width="@dimen/iconsize_middle"
+            android:layout_height="@dimen/iconsize_middle"
+            android:background="@mipmap/play_big" />
+
+        <TextView
+            android:id="@+id/tvList"
+            android:layout_width="@dimen/iconsize_middle"
+            android:layout_height="@dimen/iconsize_middle"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:background="@mipmap/music_list" />
+
+    </LinearLayout>
+
+</LinearLayout>

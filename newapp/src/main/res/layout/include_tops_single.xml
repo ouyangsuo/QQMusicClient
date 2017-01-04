@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_tops">
+
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/icon_size_small"
+        android:layout_height="@dimen/icon_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/arrow" />
+
+    <TextView
+        android:id="@+id/tvSingleInfo"
+        style="@style/BigText.Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 歌曲名歌曲名歌曲 - 歌手名"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/arrow"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+</RelativeLayout>

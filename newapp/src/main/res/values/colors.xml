@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#0000</color>
+    <color name="whiteTransparent">#cfff</color>
+    <color name="whiteTransparentII">#9fff</color>
+    <color name="whiteTransparentIII">#5fff</color>
+    <color name="toolbarGreen">#30C17C</color>
+    <color name="grayLightest">#eee</color>
+    <color name="black">#000</color>
+    <color name="blackTransparent">#9000</color>
+    <color name="blackTransparentII">#5000</color>
+    <color name="blackTransparentIII">#2000</color>
+    <color name="grayLight">#eee</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#00f</color>
+</resources>
